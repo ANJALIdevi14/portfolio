@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet">
+    
+    <title>AD Portfolio</title>
+</head>
+<body>
+    <div class="theme-switch-wrapper">
+        <label class="theme-switch" for="checkbox">
+            <input type="checkbox" id="checkbox">
+            <div class="slider round"></div>
+        </label>
+        
+    </div>
+    <section>
+        <div class="heading">
+            <h1>Helloo! , Myself <br><b>Anjali Devi</b></h1>
+            <p>I am Anjali Devi, currently pursuing proficiency in C++ programming, with a strong foundation in Python. I possess a passion for continuous learning and remain enthusiastic about acquiring new skills and knowledge.</p>
+            <a href="https://github.com/ANJALIdevi14" target="_blank" class="btn-1st"><b>See my Works</b></a>
+        </div>
+    </section>
+
+    <section>
+        <div class="card">
+            <div class="card-image">
+              <img src="./images/WhatsApp Image 2023-10-09 at 6.14.03 PM.jpeg" class="daksh" alt="Image description">
+            </div>
+          </div>
+          
+    </section>
+
+    <div>
+        <ul class="anjalii">
+            <li class="mitthu">
+                <b>
+                    <a href="https://www.linkedin.com/in/anjali-devi-a233b4250/">LinkedIn</a>
+                </b>
+                
+            </li>
+            <li class="mitthu"> 
+                <b>
+                    <a href="https://www.hackerrank.com/anjali_21b153111">Hakkerank</a>
+                </b>
+            
+            </li>
+        </ul>
+    </div>
+
+    
+
+
+
+
+    <script>
+        const colorSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
+
+        function switchColor(e) {
+            if (e.target.checked) {
+                document.documentElement.setAttribute('data-theme', 'dark');
+            } else {
+                document.documentElement.setAttribute('data-theme', 'light');
+            }
+        }
+
+        colorSwitch.addEventListener('change', switchColor, false);
+    </script>
+
+</body>
+</html>
